@@ -1,19 +1,19 @@
 {
-  "name": "my-project",
-  "version": "1.0.0",
-  "description": "A TypeScript project that compiles to an executable.",
-  "main": "src/app.ts",
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/app.js",
-    "generate-exe": "pkg dist/app.js --out my-project.exe"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "typescript": "^4.5.0",
-    "pkg": "^5.8.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "my-project",
+    "version": "1.0.0",
+    "description": "A TypeScript project that compiles to an executable.",
+    "main": "src/app.ts",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/app.js",
+        "pack:exe": "npm run build && npx pkg dist/app.js --targets node16-win-x64 --output dist/CalC.exe"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.6",
+        "pkg": "^5.8.1",
+        "typescript": "^4.9.5"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
