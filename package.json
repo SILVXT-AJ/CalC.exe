@@ -1,0 +1,14 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "pack:exe": "npm run build && npx pkg . --targets node16-win-x64 --output dist/CalC.exe"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "pkg": "^5.8.0"
+  }
+}
