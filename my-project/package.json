@@ -1,0 +1,19 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A TypeScript project that compiles to an executable.",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "generate-exe": "pkg dist/app.js --out my-project.exe"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.0",
+    "pkg": "^5.8.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
